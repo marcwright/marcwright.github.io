@@ -51,3 +51,48 @@
   width: 450px;
   background-color: yellow;
 }
+
+
+/*for Model Citizen Page*/
+
+table {
+  border:10px solid black;
+  border-collapse:collapse;
+  width: 650px;
+  }
+th,td {
+  border:2px solid black;
+  padding:2px;
+  width: auto 0;
+  }
+th {
+  text-align:left;
+  }
+ 
+.textbox { 
+    background: #1A1A1A; 
+    font-size: 20px;
+    height:50px; 
+    width: 275px; 
+    border-radius: 2em; 
+    border: none; 
+    color: #A2A2A2; 
+    padding-left: 1em; 
+    outline: none; 
+    box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%) 
+} 
+
+.citizen {
+  width: 650px;
+  margin: 0 auto;
+  font-family: georgia;
+  background-color: gray;
+  text-align: center;
+
+}
+
+#citizen-inner {
+ /* padding-left: 6px;*/
+  text-align: left;
+}
+ 
