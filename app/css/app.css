@@ -56,7 +56,7 @@
 /*for Model Citizen Page*/
 
 table {
-  border:10px solid black;
+  border:10px 0 10px 0 solid black;
   border-collapse:collapse;
   width: 650px;
   }
@@ -71,9 +71,22 @@ th {
  
 .textbox { 
     background: #1A1A1A; 
-    font-size: 20px;
+    font-size: 15px;
     height:50px; 
-    width: 275px; 
+    width: 325px; 
+    border-radius: 2em; 
+    border: none; 
+    color: #A2A2A2; 
+    padding-left: 1em; 
+    outline: none; 
+    box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px hsl(0, 0%, 2%) 
+} 
+
+.buttonred { 
+    background: red; 
+    font-size: 15px;
+    height:30px; 
+    width: 250px; 
     border-radius: 2em; 
     border: none; 
     color: #A2A2A2; 
@@ -83,6 +96,7 @@ th {
 } 
 
 .citizen {
+  border:10px solid black;
   width: 650px;
   margin: 0 auto;
   font-family: georgia;

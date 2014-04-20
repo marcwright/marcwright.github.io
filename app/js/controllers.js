@@ -94,5 +94,13 @@ angular.module('myApp.controllers', [])
 		{title: 'LEARN TO FLY', artist: 'FOO FIGHTERS', singer: 'Marc', image: "img/marc.png"},
 		{title: 'PANAMA', artist: 'VAN HALEN', singer: 'Marc', image: "img/marc.png"}]
 
+	 	$scope.addOne = function() {
+	    $scope.songs.push({title:$scope.title, artist:$scope.artist, singer:$scope.singer});
+	    $scope.title = null;
+	    $scope.artist = null;
+	    $scope.singer = null;
+	    };
+
+
   });
 

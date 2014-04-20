@@ -1,8 +1,29 @@
 <div class="citizen">
   
 <h1>Model Citizen Songs for Virtuosos</h1>
-  <br />
-  <input class="textbox" type="text" size="100px" ng-model="x" placeholder="Enter Artist, Title or Singer"/>
+
+    <div class="taskForm">
+      <br>
+      <h3>Add a new song:</h3> 
+      <br>
+       <input class="textbox" type="text" x-ng-model="title" placeholder="Title"/><br><br>
+       <input class="textbox" type="text" x-ng-model="artist" placeholder="Artist"/><br><br/>
+      <input class="textbox" type="text" x-ng-model="singer" placeholder="Singer"/><br><br><br/>
+
+     <!--  <select>
+        <option value="Marc">Marc</option>
+        <option value="Keith">Keith</option>
+        <option value="Paul">Paul</option>
+      </select><br> -->
+
+       <input type="button" class="buttonred" value="Add New Virtuosity!" x-ng-click="addOne();"/>
+    </div>
+
+  <br /><br/>
+
+  <h3>Or...</h3>
+  <br /><br/>
+  <input class="textbox" type="text" size="100px" ng-model="x" placeholder="Search Artist or Title or Singer"/>
 
   <br /><br />
  <div id="citizen-inner">
