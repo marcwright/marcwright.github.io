@@ -1,5 +1,6 @@
 'use strict';
 
+var app = angular.module('myApp', ['pascalprecht.translate']);
 
 // Declare app level module which depends on filters, and services
 angular.module('myApp', [
