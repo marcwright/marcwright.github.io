@@ -1,0 +1,10 @@
+Name:
+	<br />
+	<input type="text" data-ng-model="x" /> {{ x | uppercase }}
+	<br />
+	<ul>
+		<li data-ng-repeat="n in names | filter:x | orderBy: 'person'"> {{n.person | uppercase}} -- {{n.age}}</li>
+	</ul>
+
+	<input type="text" ng-model="g" />
+	<p ng-bind="g"></p>

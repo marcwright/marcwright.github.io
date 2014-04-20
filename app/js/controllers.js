@@ -12,7 +12,17 @@ angular.module('myApp.controllers', [])
 		]
 
   	})
-  
+
   .controller('MyCtrl2', function() {
 
+  })
+
+ .controller('AngularIn60Ctrl', function($scope) {
+
+ 	$scope.names = [
+		{person:'Andrew', age:36}, 
+		{person:'Maren',age: 32},
+		{person:'Schmitty', age:56}]
+
   });
+
