@@ -28,3 +28,26 @@
   content: "";
   padding: 0;
 }
+
+
+/*//kitties app stuff*/
+/*body {
+  background-image: url("../img/background.png");
+  text-align: center;
+  font-family: georgia;
+
+}*/
+
+.kitties {
+  padding: 5px;
+  margin: 10px;
+  border: 2px dashed gray;
+
+}
+
+.left-container, .right-container {
+  float:left;
+  border: 2px solid red;
+  width: 450px;
+  background-color: yellow;
+}

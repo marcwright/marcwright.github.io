@@ -1,5 +1,24 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<h1>KITTIES!!</h1>
+
+		<div class="left-container">
+			<h1>Kitties for Adoption</h1>
+			<div class="kitties" x-ng-repeat="k in kitties | filter:false">
+				<h2>My name is: {{k.catName}}</h2>
+				<p>I am {{k.monthsOld}} months old.</p>
+				<p>I'm a {{k.gender}}.</p>
+				<img x-ng-src="{{k.image}}"/>
+				<p>Adopt me please?<input type="checkbox" x-ng-model="k.adopted"></p>
+			</div>
+		</div>
+
+		<div class="right-container">
+		<h1>At their forever homes</h1>
+			<div class="kitties" x-ng-repeat="k in kitties | filter:true">
+				<h2>My name is: {{k.catName}}</h2>
+				<p>I am {{k.monthsOld}} months old.</p>
+				<p>I'm a {{k.gender}}.</p>
+				<img x-ng-src="{{k.image}}"/>
+				<p>Adopt<input type="checkbox" x-ng-model="k.adopted"></p>
+			</div>
+		</div>
+	
