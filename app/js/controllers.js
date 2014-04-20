@@ -12,6 +12,15 @@ angular.module('myApp.controllers', [])
 		]
   	})
 
+  .controller('ttt', function($scope) {
+
+ 	$scope.names = [
+		{person:'Andrew', age:36}, 
+		{person:'Maren',age: 32},
+		{person:'Schmitty', age:56}]
+
+  })
+
   .controller('MyCtrl2', function($scope) {
 
   	$scope.kitties = [
@@ -99,8 +108,15 @@ angular.module('myApp.controllers', [])
 	    $scope.title = null;
 	    $scope.artist = null;
 	    $scope.singer = null;
-	    };
+	    }
+	  })
 
+  .controller('translate', function($scope) {
+
+ 	$scope.names = [
+		{person:'Andrew', age:36}, 
+		{person:'Maren',age: 32},
+		{person:'Schmitty', age:56}]
 
   });
 

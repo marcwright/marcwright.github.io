@@ -8,7 +8,8 @@ var app = angular.module('myApp', [
   'myApp.filters',
   'myApp.services',
   'myApp.directives',
-  'myApp.controllers'
+  'myApp.controllers',
+  'pascalprecht.translate'
   ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider
@@ -31,6 +32,16 @@ config(['$routeProvider', function($routeProvider) {
         {
           templateUrl: 'partials/modelcitizen.html', 
           controller: 'ModelCitizen'
+        })
+      .when('/ttt', 
+        {
+          templateUrl: 'partials/ttt.html', 
+          controller: 'ttt'
+        })
+      .when('/translate', 
+        {
+          templateUrl: 'partials/translate.html', 
+          controller: 'translate'
         })
       .otherwise(
         {
